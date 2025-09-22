@@ -1,5 +1,3 @@
-# Go-Cpp-Interop-Test
+# Go and C++ interop
 
-## Example for Go and C++ interop:
-
-Calling C++ code from Go
+This repository showcases calling C++ code from a Go program
