@@ -11,7 +11,7 @@ make build
 ```
 3. (optional) Run the clean command
 ```shell
-make build
+make clean
 ```
 4. Run the executable
 ```shell
