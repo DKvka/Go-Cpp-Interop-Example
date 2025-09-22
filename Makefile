@@ -1,11 +1,7 @@
-# Minimal Makefile for statically linking C++ into Go
-
-GO_BINARY = interop
-
 build:
-	g++ -c hello.cpp -o hello.o
-	ar rcs libhello.a hello.o
-	CGO_ENABLED=1 CGO_LDFLAGS="-L. -lhello -lstdc++" go build -ldflags '-extldflags "-static"' -o $(GO_BINARY)
+	g++ -c -fPIC hello.cpp -o hello.o
+	g++ -shared -o libhello.so hello.o
+	go build .
 
 clean:
-	rm -f hello.o libhello.a $(GO_BINARY)
+	rm -f hello.o libhello.so
