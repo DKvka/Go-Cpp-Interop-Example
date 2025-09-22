@@ -15,5 +15,5 @@ make clean
 ```
 4. Run the executable
 ```shell
-./
+./interop
 ```
