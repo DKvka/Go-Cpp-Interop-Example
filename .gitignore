@@ -1,6 +1,6 @@
 # MacOS
-/interop
-/.DS_Store
+./interop
+./.DS_Store
 
 
 # .gitignore for Go
